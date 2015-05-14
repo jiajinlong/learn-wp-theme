@@ -55,11 +55,11 @@
 		<h4>Social Profiles</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
-			<li class="float"><a href="#"><img alt="" src="images/twitter.png" title="Twitter" /></a></li>
-			<li class="float"><a href="#"><img alt="" src="images/facebook.png" title="Facebook" /></a></li>
-			<li class="float"><a href="#"><img alt="" src="images/stumbleupon.png" title="StumbleUpon" /></a></li>
-			<li class="float"><a href="#"><img alt="" src="images/flickr.png" title="Flickr" /></a></li>
-			<li class="float"><a href="#"><img alt="" src="images/delicious.png" title="Delicious" /></a></li>
+			<li class="float"><a href="#"><img alt="" src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="Twitter" /></a></li>
+			<li class="float"><a href="#"><img alt="" src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="Facebook" /></a></li>
+			<li class="float"><a href="#"><img alt="" src="<?php bloginfo('template_url'); ?>/images/stumbleupon.png" title="StumbleUpon" /></a></li>
+			<li class="float"><a href="#"><img alt="" src="<?php bloginfo('template_url'); ?>/images/flickr.png" title="Flickr" /></a></li>
+			<li class="float"><a href="#"><img alt="" src="<?php bloginfo('template_url'); ?>/images/delicious.png" title="Delicious" /></a></li>
 		</ul>
 	</div>
 	<div class="hr grid_12 clearfix">&nbsp;</div>

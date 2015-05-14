@@ -9,7 +9,7 @@
 			<p class="sub"><a href="#">News</a>, <a href="#">Products</a> &bull; 31st Sep, 09 &bull; <a href="#">7 Comments</a></p>
 			<div class="hr dotted clearfix">&nbsp;</div>
 			<!-- Post Title -->
-			<img class="thumb" src="images/610x150.gif" alt=""/>
+			<img class="thumb" src="<?php bloginfo('template_url'); ?>/images/610x150.gif" alt=""/>
 			<!-- Post Content -->
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam id mauris accumsan egestas. Sed sed lorem. Integer id mi vel sapien fermentum vehicula. Pellentesque vitae lacus a sem posuere fringilla. Vestibulum dolor. Phasellus cursus augue ac purus. Curabitur faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 			<h1>H1 Heading</h1>

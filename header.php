@@ -2,9 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Aurelius | Blog</title>
+<title><?php if ( is_home() ) {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    } elseif ( is_category() ) {
+        single_cat_title(); echo " - "; bloginfo('name');
+    } elseif (is_single() || is_page() ) {
+        single_post_title();
+    } elseif (is_search() ) {
+        echo "搜索结果"; echo " - "; bloginfo('name');
+    } elseif (is_404() ) {
+        echo '页面未找到!';
+    } else {
+        wp_title('',true);
+    } ?></title>
 <!-- Stylesheets -->
-<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 </head>
 <body>
 <div id="wrapper" class="container_12 clearfix">
