@@ -1,14 +1,55 @@
 /*
-Theme Name: jinlong
-Theme URI: http://www.jinlong.com
-Description: 用心学习
+Theme Name: Aurelius
+Theme URI: http://www.ludou.org
+Description: It's a theme create by Ludou
 Version: 1.0
-Author: 影侠
-Author URI: http://www.jinlong.com
-Tags: 发奋, 自强, 谦虚
+Author: Ludou
+Author URI: Ludou
+Tags: custom header, fixed width, two columns, widgets
 */
 
 /* Global Styles */
+
+#wp-calendar {
+	width:100%;
+}
+#wp-calendar #today {
+	background:none repeat scroll 0 0 #BBBBBB;
+}
+#wp-calendar tbody a {
+	font-weight:bold;
+}
+#wp-calendar caption {
+	font-family:Arial;
+	font-size:150%;
+	font-weight:bold;
+	letter-spacing:-0.05em;
+	padding-bottom:5px;
+	text-align:left;
+}
+#wp-calendar th, #wp-calendar td {
+	text-align:center;
+}
+#wp-calendar tbody td {
+	width:32px;
+	height:17px;
+	border:1px solid #CCCCCC;
+}
+#wp-calendar tbody td.pad {
+	border:0 none;
+}
+#wp-calendar th {
+	background:none repeat scroll 0 0 #999999;
+	color:#FFFFFF;
+}
+#wp-calendar td#prev {
+	padding-top:5px;
+	text-align:left;
+}
+#wp-calendar td#next {
+	padding-top:5px;
+	text-align:right;
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
@@ -18,6 +59,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
+	outline:none;
 }
 body {
 	line-height: 1;
@@ -32,6 +74,14 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+pre {
+	background: #F4F5F7;
+	border:1px dashed #CCCCCC;
+	margin:5px 0;
+	padding:8px 12px 8px 36px;
+	white-space:pre-wrap;
+}
+
 /* remember to define focus styles! */
 :focus {
 	outline: 0;
@@ -50,8 +100,8 @@ table {
 }
 body {
 	background:url(./images/bg.png) repeat-x #FFFFFF;
-	font-size:12px;
-	font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+	font-size:13px;
+	font-family:Verdana,"BitStream vera Sans",Helvetica,Sans-serif;
 	color:#000000;
 }
 a:focus {
@@ -141,6 +191,7 @@ ol {
 .container_12 .grid_4 {
 	width:300px;
 }
+
 .container_12 .grid_5 {
 	width:385px;
 }
@@ -265,8 +316,9 @@ ol {
 /* Site Logo */
 
 	h1#logo {
-	font-size:48px;
+	font-size:45px;
 	font-weight:normal;
+	font-family:"Trajan Pro";
 	margin-top:30px;
 	color:#000000;
 }
@@ -305,16 +357,16 @@ ul#navigation li a:hover {
 }
 /* Sub Navigation */
 
-	ul.sidebar {
+.container_12 .grid_4 ul {
 	list-style:none;
 	margin:0 0 30px 0;
 	padding:0;
 }
-ul.sidebar li {
+.container_12 .grid_4  ul li {
 	margin:0 0 0 0;
 	padding:0;
 }
-ul.sidebar a {
+.container_12 .grid_4  ul a {
 	width:295px;
 	display:inline-block;
 	padding:10px 0 10px 5px;
@@ -322,19 +374,19 @@ ul.sidebar a {
 	text-decoration:none;
 	color:#393939;
 }
-ul.sidebar li:last-child a {
+.container_12 .grid_4 ul li:last-child a {
 	-moz-border-radius-bottomleft:5px;
 	-moz-border-radius-bottomright:5px;
 	-webkit-border-bottom-left-radius:5px;
 	-webkit-border-bottom-right-radius:5px;
 }
-ul.sidebar li:first-child a {
+.container_12 .grid_4 ul li:first-child a {
 	-moz-border-radius-topleft:5px;
 	-moz-border-radius-topright:5px;
 	-webkit-border-top-left-radius:5px;
 	-webkit-border-top-right-radius:5px;
 }
-ul.sidebar a:hover {
+.container_12 .grid_4 ul a:hover {
 	width:280px;
 	background:#f6f6f6;
 	padding:10px 0 10px 20px;
@@ -531,7 +583,7 @@ a img {
 }
 .post .title {
 	color:#393939;
-	font-size:30px;
+	font-family:"Lucida Sans","Helvetica","Segoe UI","Arial","BitStream vera Sans";
 }
 .post .title a {
 	color:#393939;
@@ -654,23 +706,23 @@ a img {
 }
 /* Comment form */
 
-	#comment_form ul {
+	#commentform ul {
 	float:left;
 }
-#comment_form ul li {
+#commentform ul li {
 	margin:10px 0;
 	list-style:none;
 	position:relative;
 	clear:both;
 }
-#comment_form label {
+#commentform label {
 	line-height:35px;
 	width:100px;
 	text-align:right;
 	float:left;
 	margin-right:10px;
 }
-#comment_form input, #comment_form textarea {
+#commentform input, #commentform textarea {
 	float:left;
 	padding:8px;
 	border:1px solid #CCCCCC;
@@ -679,10 +731,10 @@ a img {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
-#comment_form input {
+#commentform input {
 	width:400px;
 }
-#comment_form textarea {
+#commentform textarea {
 	width:500px;
 	height:150px;
 	resize:none;
@@ -761,4 +813,14 @@ a img {
 	background-color:#890000;
 	border-color:#890000;
 	color:#FFFFFF !important;
+}
+
+#searchform {
+	margin:25px auto;
+}
+.rsswidget {
+	font-size:16px;
+}
+.rsswidget img {
+	margin:0px;
 }
