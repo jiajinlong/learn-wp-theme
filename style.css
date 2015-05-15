@@ -1,14 +1,14 @@
 /*
-Theme Name: Aurelius
-Theme URI: http://www.ludou.org
-Description: It's a theme create by Ludou
+Theme Name: Silence
+Theme URI: http://www.silence.com
+Description: 这个主题是 Silence 制作。
 Version: 1.0
-Author: Ludou
-Author URI: Ludou
-Tags: custom header, fixed width, two columns, widgets
+Author: Silence
+Author URI: Silence
+Tags: Wordpress
 */
 
-/* Global Styles */
+/* Global Styles 全局样式 */
 
 #wp-calendar {
 	width:100%;
@@ -82,18 +82,18 @@ pre {
 	white-space:pre-wrap;
 }
 
-/* remember to define focus styles! */
+/* remember to define focus styles! 定义焦点风格 */
 :focus {
 	outline: 0;
 }
-/* remember to highlight inserts somehow! */
+/* remember to highlight inserts somehow! 强调插入*/
 ins {
 	text-decoration: none;
 }
 del {
 	text-decoration: line-through;
 }
-/* tables still need 'cellspacing="0"' in the markup */
+/* tables still need 'cellspacing="0"' in the markup 表格仍需要在标记*/
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -407,7 +407,7 @@ h2.caption span {
 h2.caption a:hover {
 	text-decoration : underline;
 }
-/* Homepage QuickNavigation */
+/* Homepage QuickNavigation 主页快速导航 */
 
 	#quicknav {
 	background:url(./images/link_border.png) repeat-x;
@@ -437,7 +437,7 @@ a .title {
 	margin-left:0;
 	width:205px;
 }
-/* About Us Page Timeline */
+/* About Us Page Timeline 关于我们时间轴 */
 
 	dl.history {
 	margin:10px 10px;
@@ -457,7 +457,7 @@ dl.history dd {
 	padding:0;
 	margin-bottom:20px;
 }
-/* Common Scroller Styles */
+/* Common Scroller Styles 常见滚轮样式 */
 
 	.roundabout-holder {
 	list-style:none;
@@ -520,12 +520,12 @@ a img {
 	border:none;
 	outline:0;
 }
-/* Featured Image Slider */
+/* Featured Image Slider 特色图片滑块 */
 
 	#featured {
 	margin:10px 0 40px 0;
 }
-/* Portfolio Image Slider */
+/* Portfolio Image Slider 项目组合滑块 */
 
 	#folio_scroller_container {
 	margin-top:35px;
@@ -537,8 +537,8 @@ a img {
 	height:400px;
 	margin:0px auto 20px auto;
 }
-/* Portfolio Styles */
-	
+/* Portfolio Styles 项目组合样式 */
+
 	.portfolio_item {
 	width:223px;
 	position:relative;
@@ -576,7 +576,7 @@ a img {
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topLeft: 5px;
 }
-/* Blog Post Styles */
+/* Blog Post Styles 博客文章样式 */
 
 	.post a:hover {
 	text-decoration:underline;
@@ -604,8 +604,8 @@ a img {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
-/* Comment's List */
-	
+/* Comment's List  评论列表*/
+
 	.commentlist {
 	margin:0;
 	padding:0;
@@ -662,7 +662,7 @@ a img {
 	text-align:center;
 	display:block;
 }
-/* Contact Form */
+/* Contact Form 联系表单 */
 
 	p.error {
 	margin-left:140px;
@@ -704,7 +704,7 @@ a img {
 #contact_form input.button {
 	float:right;
 }
-/* Comment form */
+/* Comment form 评论表单 */
 
 	#commentform ul {
 	float:left;
@@ -739,7 +739,7 @@ a img {
 	height:150px;
 	resize:none;
 }
-/* Contact Page Sidebar */
+/* Contact Page Sidebar 联系页面边栏 */
 
 	.contact ul {
 	list-style:none;
@@ -747,8 +747,8 @@ a img {
 .contact li {
 	margin:0;
 }
-/* Overiding Classes */
-/* Must remain at the bottom of the stylesheet */
+/* Overiding Classes 重写类 */
+/* Must remain at the bottom of the stylesheet 必须保持在样式表的底部 */
 
 	.clearfix:after {
 	clear:both;

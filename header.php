@@ -58,7 +58,7 @@ $keywords = trim(strip_tags($keywords));
     } else {
         wp_title('',true);
     } ?></title>
-<!-- Stylesheets -->
+<!-- Stylesheets 样式表 -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有文章" href="<?php echo get_bloginfo('rss2_url'); ?>" />
@@ -68,14 +68,14 @@ $keywords = trim(strip_tags($keywords));
 <?php flush(); ?>
 <body>
 <div id="wrapper" class="container_12 clearfix">
-	<!-- Text Logo -->
+	<!-- Text Logo 文字标识 -->
 	<h1 id="logo" class="grid_4"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-	<!-- Navigation Menu -->
+	<!-- Navigation Menu 导航菜单 -->
 	<ul id="navigation" class="grid_8">
     <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
     <li <?php if (is_home()) { echo 'class="current"';} ?>><a title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a></li>
 </ul>
 	<div class="hr grid_12 clearfix">&nbsp;</div>
-	<!-- Caption Line -->
+	<!-- Caption Line  标题行-->
 	<h2 class="grid_12 caption clearfix"><?php bloginfo('description'); ?></h2>
 	<div class="hr grid_12 clearfix">&nbsp;</div>

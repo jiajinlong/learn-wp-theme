@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: contract
+模板名: 联系页面
 */
 ?>
 <?php get_header(); ?>
-	<!-- Caption Line -->
+	<!-- Caption Line 标题行-->
 	<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 	<h2 class="grid_12 caption clearfix"><?php the_title(); ?></h2>
 	<div class="hr grid_12 clearfix">&nbsp;</div>
@@ -20,7 +20,7 @@ Template Name: contract
 	<?php endif; ?>
 	<!-- Column 2 / Sidebar -->
 	<div class="grid_4 contact">
-		<!-- Adress and Phone Details -->
+		<!-- Adress and Phone Details 详细地址和电话 -->
 		<h4>Address and Phone</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
@@ -33,14 +33,14 @@ Template Name: contract
 			<li>USA - (888) 888-8888</li>
 			<li>Worldwide - (888) 888-8888</li>
 		</ul>
-		<!-- Email Addresses -->
+		<!-- Email Addresses 电子邮件地址-->
 		<h4>Emails</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>
 			<li>General - <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
 			<li>Sales - <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></li>
 		</ul>
-		<!-- Social Profile Links -->
+		<!-- Social Profile Links 社会化网络链接 -->
 		<h4>Social Profiles</h4>
 		<div class="hr dotted clearfix">&nbsp;</div>
 		<ul>

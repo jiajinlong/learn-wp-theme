@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page without sidebar
+模板名称: 无边栏页面
 */
 ?>
 <?php get_header(); ?>

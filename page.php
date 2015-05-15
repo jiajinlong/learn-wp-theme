@@ -4,7 +4,7 @@
 	<h2 class="grid_12 caption clearfix"><?php the_title(); ?></h2>
 	<div class="grid_8">
 		<?php the_content(); ?>
-		<!-- Contact Form -->
+		<!-- Contact Form 联系表单-->
 		<?php comments_template(); ?>
 	</div>
 	<?php else : ?>
