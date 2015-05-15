@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 	<!-- 1 列 / 内容 -->
 	<div class="grid_8">
-		<div class="hr clearfix">&nbsp;</div>
-		<div class="hr clearfix">&nbsp;</div>
 		<!-- 博客文章 -->
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="post">
