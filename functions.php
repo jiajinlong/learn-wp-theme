@@ -1,5 +1,5 @@
 <?php
-/** widgets */
+/** widgets 小工具 */
 if( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name' => 'First_sidebar',
